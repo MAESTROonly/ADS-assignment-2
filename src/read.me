@@ -1,0 +1,39 @@
+# Custom Data Structures Implementation
+
+This project provides custom implementations of various data structures in Java, including ArrayList, LinkedList, Stack, MinHeap, and Queue.
+
+## Overview
+
+This project aims to provide custom implementations of commonly used data structures in Java. Each data structure is implemented using the `MyList` interface, which defines a set of operations common to all lists.
+
+The project includes the following data structures:
+
+- MyArrayList: An implementation of a dynamic array-based list.
+- MyLinkedList: An implementation of a doubly linked list.
+- MyStack: An implementation of a stack using MyArrayList or MyLinkedList as the underlying data structure.
+- MyMinHeap: An implementation of a min-heap using MyArrayList as the underlying data structure.
+- MyQueue: An implementation of a queue using MyLinkedList as the underlying data structure.
+
+## Usage
+
+To use the data structures provided by this project:
+
+1. Import the necessary classes into your project.
+2. Create instances of the desired data structures.
+3. Use the provided methods to perform operations on the data structures.
+
+Example usage:
+
+```java
+MyArrayList<Integer> arrayList = new MyArrayList<>();
+arrayList.add(1);
+arrayList.add(2);
+arrayList.add(3);
+System.out.println("Size of arrayList: " + arrayList.size());
+System.out.println("First element of arrayList: " + arrayList.getFirst());
+
+MyLinkedList<String> linkedList = new MyLinkedList<>();
+linkedList.addLast("Hello");
+linkedList.addLast("World");
+System.out.println("Size of linkedList: " + linkedList.size());
+System.out.println("Last element of linkedList: " + linkedList.getLast());
